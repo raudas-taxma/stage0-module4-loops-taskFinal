@@ -2,11 +2,10 @@ package school.mjc.stage0.loops.finalTask;
 
 public class Pyramid {
     public void printPyramid(int cathetusLength) {
-        int sideLenght = cathetusLength * 2 - 1;
 
         for (int i = 0; i < cathetusLength; i++) {
             int counter = cathetusLength;
-            for (int j = 0; j < sideLenght; j++) {
+            for (int j = 0; j < cathetusLength + i; j++) {
                 if (j < cathetusLength - i - 1 || j > cathetusLength + i - 1) {
                     System.out.print(' ');
                 } else {
